@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttributeInForms</title>
+</head>
+<body>
+    <form action="https://www.facebook.com/login/">
+        <label for="username">Username</label>
+        <input type="text" name="Username" id="username">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="Password" id="password">
+        <br><br>
+        <input type="number" name="Age" id="age" placeholder="EnterAge">
+        <br><br>
+        <input type="number" name="MobileNumber" id="mobile_number" placeholder="Enter MobileNumber">
+        <br><br>
+        <!-- <input type="submit" value="login"> -->
+        <input type="image" src="../../assets/images/Grouppic.jpg" alt="Submit" style="width: 30px;">
+        <a href="https://www.facebook.com/reg/"><input type="button" value="CreateAccount"></a>
+        <input type="reset" value="clear">
+        <br><br>
+        <input type="text" name="Username" id="username" placeholder="Username" required><sup style="color: red;">*</sup>
+        <br><br>
+        <input type="password" name="Password" id="password" placeholder="Password" required><sup style="color: red;">*</sup>
+        <br><br>
+        <input type="email" name="EmailId" id="email" placeholder="EmailId" required><sup style="color: red;">*</sup>
+        <br><br>
+        <input type="number" name="AadhaarCardNumber" id="aadhaar" placeholder="aadhaarNumber" value="444345138228" readonly>
+        <br><br>
+        <input type="text" name="PANCardNumber" id="pancard" placeholder="PANcard" value="BPAPL8379B" readonly>
+        <br><br>
+        <input type="text" name="OTP" id="OTP" placeholder="Enter OTP" disabled>
+        <br><br>
+        <input type="text" style="width: 10px;height: 15px;" minlength="1" maxlength="1">
+        <input type="text" style="width: 10px;height: 15px;" minlength="1" maxlength="1">
+        <input type="text" style="width: 10px;height: 15px;" minlength="1" maxlength="1">
+        <input type="text" style="width: 10px;height: 15px;" minlength="1" maxlength="1">
+        <input type="text" style="width: 10px;height: 15px;" minlength="1" maxlength="1">
+        <input type="text" style="width: 10px;height: 15px;" minlength="1" maxlength="1">
+        <input type="button" value="ValidateOTP" disabled>
+        <br><br>
+        <input type="submit" value="Apply">
+        <br><br>
+        <select name="City" id="city">
+            <option>--select city--</option>
+            <optgroup label="AndhraPradesh">
+                <option>vishakapatnam</option>
+                <option>guntur</option>
+                <option>kurnool</option>
+            </optgroup>
+            <optgroup label="Telengana">
+                <option>hyderabad</option>
+                <option>warangal</option>
+                <option>karimnagar</option>
+            </optgroup>
+            <optgroup label="TamilNadu">
+                <option>chennai</option>
+                <option>madurai</option>
+                <option>coimbatore</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <!-- datalist -->
+        <label for="course">enter/select Courses</label>
+        <input type="text" name="Course" id="course" placeholder="Enter/select Course" list="course_datalist">
+        <datalist id="course_datalist">
+            <option>HTMl</option>
+            <option>CSS</option>
+            <option>JavaScript</option>
+            <option>ReactJS</option>
+            <option>VueJS</option>
+            <option>NodeJS</option>
+            <option>ElectronJs</option>
+            <option>AngularJS</option>
+            <option>TYpeScript</option>
+            <option>Python</option>
+            <option>Java</option>
+            <option>AutomationTesting</option>
+        </datalist>
+
+    </form>
+</body>
+</html>
